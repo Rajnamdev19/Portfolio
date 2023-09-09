@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12b1a8f74a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <p><span>Student of Data Science</span></p>
+                <h1>Hi, I'm <span>Raj </span>Namdev<br>From VIT</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_c1">
+                    <img src="My Photo.png" id="myphoto">
+                </div>
+                <div class="about_c2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hey, There <br><br>This is Raj Namdev<br>Currently, I'm pursuing an
+                         Integrated MTech in Computer Science Engineering with a specialization
+                          in Computational and Data Science at the Vellore Institute of Technology.
+
+                        I love to learn new Technologies that are evolving rapidly, By this I 
+                        can say that I have a learning bug inside me that keeps adapting new things every day :)</p>
+                     <div class="tabtitles">
+                         <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                         <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                         <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Programming Language</span><br>C++, Matlab</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>2021</span><br>Co-Founder of <em><strong>Awoken Sparks</strong></em><br>(A small Start-up)</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2023 - 2028</span><br>Vellore Institute of Technology <br>
+                                Integrated Master of Technology - Int. MTech in Computer Science Engineering (Computional and Data Science) <br></li>
+                            <li><span>2021 - 2023</span><br>New Monalisa H. S. School<br>
+                                                            Higher Secondary School (Science PCM) <br>
+                                                            Grade: 11th - 12th</li>
+                            <li><span>2010 - 2021</span><br>The Oxford H. S. School, Sehore <br>
+                                                            High School<br>
+                                                            Grade: 1st - 10th</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="serviceslist">
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Science</h2>
+                    <p>Learning and gaining experience in data manipulation, analysis, and visualization. 
+                       Mastering machine learning techniques and algorithms.</p>
+                        <a href="https://en.wikipedia.org/wiki/Data_science">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    
+                    <p>Having a hands on experience in HTML, CSS and JavaScript. 
+                       Build a portfolio and Amazon Clone to showcase my skills.</p>
+                        <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>Currently, learning python development and its libraries.</p>
+                        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Learn more</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="Work-1.jpg">
+                    <div class="layer">
+                        <h3>&#10004; E-commerce Website Clone</h3>
+                        <p>I created Clone of Amazon.com using HTML and CCS. Check it out &#128515;</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Work-2.png">
+                    <div class="layer">
+                        <h3>&#10004; Portfolio Website</h3>
+                        <p>I created Personal Portfolio Website using HTML, CSS and JavaScript &#128515;</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Work-3.png">
+                    <div class="layer">
+                        <h3>&#10004; Upcoming Project</h3>
+                        <p>Wait... untill I post &#128515;</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more...</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rajnamdev1902@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="Socialicons">
+                        <a target="_blank" href="https://www.linkedin.com/in/raj-namdev-78bab123a"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://github.com/Rajnamdev19"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="RajNamdevResume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contactright">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><a href="#header">&#11014; Go to top</a></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activelink");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+</script>
+    <script>
+        var side_menu = getElementById(sidemenu);
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIVJ-1OAO4E8J2zxiIjUYqCrzgT_oKN0eQ81TQbQZny69CMADvtohO1NsxIEkcFGIeGA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "&#10004; Your message send succesfully"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
